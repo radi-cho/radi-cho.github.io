@@ -1,0 +1,27 @@
+{
+  "name": "radi-cho.github.io",
+  "version": "1.0.0",
+  "description": "Personal website and blog. Projects showcase. Skills description. Radostin Cholakov.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "tsc ./src/index.ts --outFile ./lib/index.js && uglifyjs ./lib/index.js -c -m --output ./lib/index.min.js",
+    "start": "npm run compile && node ./lib/index.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/radi-cho/radi-cho.github.io.git"
+  },
+  "keywords": [
+    "personal",
+    "blog",
+    "website",
+    "angular",
+    "typescript"
+  ],
+  "author": "Radi Cho <radicho123@gmail.com> (http://radi-cho.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/radi-cho/radi-cho.github.io/issues"
+  },
+  "homepage": "https://github.com/radi-cho/radi-cho.github.io#readme"
+}
