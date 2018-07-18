@@ -1,0 +1,12 @@
+.greeting-container {
+  background: red;
+  padding: 35vh 0;
+}
+.greeting-title {
+  display: inline-block;
+  text-align: center;
+  background: white;
+  width: 85vw;
+  font-size: 8.5vw;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
