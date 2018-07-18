@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 // Import greetings data
-import { greetings } from '../../utils/constants';
+import { greetings, fullName, shorFirstName } from '../../utils/constants';
 // greetings - array with multiple greetings
 import { getGreeting } from '../../utils/methods';
 // getGreeting - method which returns one of many greetings
@@ -15,11 +15,12 @@ import { Greeting } from '../../utils/types';
 })
 export class GreetingComponent implements OnInit {
   constructor() {}
-  greeting: Greeting = getGreeting(0);
+  greeting: Greeting = getGreeting(0, shorFirstName);
+  name: string = fullName;
 
   updateGreeting = () => {
     const index = (this.greeting.index + 1) % greetings.length;
-    const newGreeting: Greeting = getGreeting(index);
+    const newGreeting: Greeting = getGreeting(index, shorFirstName);
     this.greeting = newGreeting;
   };
 

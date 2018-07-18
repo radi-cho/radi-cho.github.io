@@ -1,12 +1,26 @@
-.greeting-container {
-  background: red;
-  padding: 35vh 0;
-}
 .greeting-title {
   display: inline-block;
   text-align: center;
-  background: white;
-  width: 85vw;
-  font-size: 8.5vw;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px 0;
+  width: 90vw;
+  font-size: 9vw;
+  border-radius: 10vw;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.greeting-container {
+  background: orange;
+  height: 100vh;
+  min-height: 200px;
+  /* min-height: 20px; */
+}
+
+.greeting-text {
+  position: relative;
+  top: 25vh;
+  user-select: none;
+  -wbekit-user-select: none;
+  -ms-user-select: none;
+}
+
