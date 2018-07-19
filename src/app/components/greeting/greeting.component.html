@@ -1,3 +1,19 @@
-<div class="greeting-container">
-    <div class="greeting-text greeting-title">{{ greeting.title }}</div>
+<div
+    class="greeting-container"
+    [ngStyle]="{'background': background, 'opacity': containerOpacity }"
+>
+    <div
+        id="title-container"
+        class="greeting-text greeting-title"
+    >
+        <span
+            id="title-text"
+            [ngStyle]="{ 'opacity': textOpacity }"
+        >
+            {{ greeting.title }}
+        </span>
+    </div>
+    <div class="greeting-text person-description">
+        <!-- <div class="person-name">{{ name }}</div> -->
+    </div>
 </div>

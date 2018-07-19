@@ -17,14 +17,23 @@ export class GreetingComponent implements OnInit {
   constructor() {}
   greeting: Greeting = getGreeting(0, shorFirstName);
   name: string = fullName;
+  containerOpacity: number = 0;
+  textOpacity: number = 1;
 
   updateGreeting = () => {
+    this.textOpacity = 0;
     const index = (this.greeting.index + 1) % greetings.length;
     const newGreeting: Greeting = getGreeting(index, shorFirstName);
-    this.greeting = newGreeting;
+    setTimeout(() => {
+      this.greeting = newGreeting;
+      this.textOpacity = 1;
+    }, 520);
   };
 
   ngOnInit() {
-    setInterval(this.updateGreeting, 1500);
+    setInterval(this.updateGreeting, 2100);
+    setTimeout(() => {
+      this.containerOpacity = 1;
+    }, 100);
   }
 }
