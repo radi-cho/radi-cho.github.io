@@ -67,6 +67,7 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = "Radostin Cholakov";
     }
+    AppComponent.prototype.ngOnInit = function () { };
     AppComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-root',
@@ -130,7 +131,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".greeting-container {\r\n  position: relative;\r\n  height: 65vh;\r\n  padding-top: 35vh;\r\n  min-height: 430px;\r\n  transition: all 1.5s ease-out;\r\n  background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);\r\n  background-size: 600% 600%;\r\n  -webkit-animation: BackgroundAnimation 120s ease infinite;\r\n  animation: BackgroundAnimation 120s ease infinite;\r\n  text-align: center;\r\n}\r\n\r\n.greeting-title {\r\n  background: rgba(255, 255, 255, 0.7);\r\n  padding: 10px 0;\r\n  margin: 0 auto;\r\n  width: 90vw;\r\n  border-radius: 10vw;\r\n\r\n  position: relative;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n          user-select: none;\r\n  -wbekit-user-select: none;\r\n  -ms-user-select: none;\r\n}\r\n\r\n#title-text {\r\n  transition: opacity 0.5s ease-out;\r\n  font-size: 9vw;\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n\r\n.navigation-arrow-container {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 30px;\r\n  right: 25%;\r\n  left: 50%;\r\n  margin-left: -50%;\r\n  transition: all 0.7s ease-out;\r\n}\r\n\r\n.navigation-arrow-container > div {\r\n  display: inline-block;\r\n  padding: 30px;\r\n  padding-top: 25px;\r\n  background: rgba(255, 255, 255, 0.5);\r\n  border: 1px dashed grey;\r\n  border-radius: 120%;\r\n  cursor: pointer;\r\n}\r\n\r\n.triangle-icon {\r\n  display: inline-block;\r\n  border: solid rgba(65, 130, 130, 0.8);\r\n  border-width: 0 7px 7px 0;\r\n  padding: 15px;\r\n\r\n  transform: rotate(45deg);\r\n  -webkit-transform: rotate(45deg);\r\n}\r\n\r\n@-webkit-keyframes BackgroundAnimation {\r\n  0% {\r\n    background-position: 0% 50%;\r\n  }\r\n  50% {\r\n    background-position: 100% 50%;\r\n  }\r\n  100% {\r\n    background-position: 0% 50%;\r\n  }\r\n}\r\n\r\n@keyframes BackgroundAnimation {\r\n  0% {\r\n    background-position: 0% 50%;\r\n  }\r\n  50% {\r\n    background-position: 100% 50%;\r\n  }\r\n  100% {\r\n    background-position: 0% 50%;\r\n  }\r\n}\r\n"
+module.exports = ".greeting-container {\r\n  position: relative;\r\n  height: 70vh;\r\n  padding-top: 30vh;\r\n  min-height: 250px;\r\n  transition: all 1.5s ease-out;\r\n  background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);\r\n  background-size: 600% 600%;\r\n  -webkit-animation: BackgroundAnimation 120s ease infinite;\r\n  animation: BackgroundAnimation 120s ease infinite;\r\n  text-align: center;\r\n}\r\n\r\n.greeting-title {\r\n  background: rgba(255, 255, 255, 0.7);\r\n  padding: 10px 0;\r\n  margin: 0 auto;\r\n  width: 90vw;\r\n  border-radius: 10vw;\r\n\r\n  position: relative;\r\n  -webkit-user-select: none;\r\n     -moz-user-select: none;\r\n          user-select: none;\r\n  -wbekit-user-select: none;\r\n  -ms-user-select: none;\r\n}\r\n\r\n#title-text {\r\n  transition: opacity 0.5s ease-out;\r\n  font-size: 9vmax;\r\n  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\n}\r\n\r\n.navigation-arrow-container {\r\n  position: absolute;\r\n  width: 100%;\r\n  height: 30px;\r\n  right: 25%;\r\n  left: 50%;\r\n  margin-left: -50%;\r\n  transition: all 0.7s ease-out;\r\n}\r\n\r\n.navigation-arrow-container > div {\r\n  display: inline-block;\r\n  width: 6.2vmax;\r\n  height: 6.2vmax;\r\n  background: rgba(255, 255, 255, 0.5);\r\n  border: 1px solid silver;\r\n  border-radius: 120%;\r\n  cursor: pointer;\r\n}\r\n\r\n.triangle-icon {\r\n  display: inline-block;\r\n  border: solid rgba(65, 130, 130, 0.8);\r\n  border-width: 0 0.6vmax 0.6vmax 0;\r\n  padding: 1.2vmax;\r\n\r\n  transform: rotate(45deg);\r\n  -webkit-transform: rotate(45deg);\r\n\r\n  position: relative;\r\n  top: 1vmax;\r\n}\r\n\r\n@-webkit-keyframes BackgroundAnimation {\r\n  0% {\r\n    background-position: 0% 50%;\r\n  }\r\n  50% {\r\n    background-position: 100% 50%;\r\n  }\r\n  100% {\r\n    background-position: 0% 50%;\r\n  }\r\n}\r\n\r\n@keyframes BackgroundAnimation {\r\n  0% {\r\n    background-position: 0% 50%;\r\n  }\r\n  50% {\r\n    background-position: 100% 50%;\r\n  }\r\n  100% {\r\n    background-position: 0% 50%;\r\n  }\r\n}\r\n"
 
 /***/ }),
 
@@ -141,7 +142,7 @@ module.exports = ".greeting-container {\r\n  position: relative;\r\n  height: 65
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div\n    class=\"greeting-container\"\n    [ngStyle]=\"{ 'opacity': containerOpacity }\"\n>\n    <div class=\"greeting-title\">\n        <span\n            id=\"title-text\"\n            [ngStyle]=\"{ 'opacity': textOpacity }\"\n        >\n            {{ greeting.title }}\n        </span>\n    </div>\n    <div\n        class=\"navigation-arrow-container\"\n        [ngStyle]=\"{ 'bottom': triangleBottomPosition + 'px' }\"\n    >\n        <div (click)=\"scroll(scrollTarget)\">\n            <i class=\"triangle-icon\"></i>\n        </div>\n    </div>\n</div>\n<span #scrollTarget></span>\n"
+module.exports = "<div\n    class=\"greeting-container\"\n    [ngStyle]=\"{ 'opacity': containerOpacity }\"\n>\n    <div class=\"greeting-title\">\n        <span\n            id=\"title-text\"\n            [ngStyle]=\"{ 'opacity': textOpacity }\"\n        >\n            {{ greeting.title }}\n        </span>\n    </div>\n    <div\n        class=\"navigation-arrow-container\"\n        [ngStyle]=\"{ 'bottom': triangleBottomPosition + 'vh' }\"\n    >\n        <div (click)=\"scroll(scrollTarget)\">\n            <i class=\"triangle-icon\"></i>\n        </div>\n    </div>\n</div>\n<span #scrollTarget></span>\n"
 
 /***/ }),
 
@@ -156,8 +157,19 @@ module.exports = "<div\n    class=\"greeting-container\"\n    [ngStyle]=\"{ 'opa
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GreetingComponent", function() { return GreetingComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _utils_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/constants */ "./src/app/utils/constants.ts");
-/* harmony import */ var _utils_methods__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/methods */ "./src/app/utils/methods.ts");
+/* harmony import */ var _utils_classes__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../utils/classes */ "./src/app/utils/classes.ts");
+/* harmony import */ var _utils_constants__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../utils/constants */ "./src/app/utils/constants.ts");
+/* harmony import */ var _utils_methods__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/methods */ "./src/app/utils/methods.ts");
+var __extends = (undefined && undefined.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -168,37 +180,37 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 // Import greetings data
 
 // greetings - array with multiple greetings
 
 // Greeting - interface which contains the data (title & index) types of a greeting
-var GreetingComponent = /** @class */ (function () {
+var GreetingComponent = /** @class */ (function (_super) {
+    __extends(GreetingComponent, _super);
     function GreetingComponent() {
-        var _this = this;
-        this.greeting = Object(_utils_methods__WEBPACK_IMPORTED_MODULE_2__["getGreeting"])(0, _utils_constants__WEBPACK_IMPORTED_MODULE_1__["shorFirstName"]);
-        this.name = _utils_constants__WEBPACK_IMPORTED_MODULE_1__["fullName"];
-        this.containerOpacity = 0;
-        this.textOpacity = 1;
-        this.triangleBottomPosition = 100;
-        this.updateGreeting = function () {
+        var _this = _super.call(this) || this;
+        _this.greeting = Object(_utils_methods__WEBPACK_IMPORTED_MODULE_3__["getGreeting"])(0, _utils_constants__WEBPACK_IMPORTED_MODULE_2__["shorFirstName"]);
+        _this.name = _utils_constants__WEBPACK_IMPORTED_MODULE_2__["fullName"];
+        _this.containerOpacity = 0;
+        _this.textOpacity = 1;
+        _this.triangleBottomPosition = 15;
+        _this.updateGreeting = function () {
             _this.textOpacity = 0;
-            var index = (_this.greeting.index + 1) % _utils_constants__WEBPACK_IMPORTED_MODULE_1__["greetings"].length;
-            var newGreeting = Object(_utils_methods__WEBPACK_IMPORTED_MODULE_2__["getGreeting"])(index, _utils_constants__WEBPACK_IMPORTED_MODULE_1__["shorFirstName"]);
+            var index = (_this.greeting.index + 1) % _utils_constants__WEBPACK_IMPORTED_MODULE_2__["greetings"].length;
+            var newGreeting = Object(_utils_methods__WEBPACK_IMPORTED_MODULE_3__["getGreeting"])(index, _utils_constants__WEBPACK_IMPORTED_MODULE_2__["shorFirstName"]);
             setTimeout(function () {
                 _this.greeting = newGreeting;
                 _this.textOpacity = 1;
             }, 520);
         };
+        return _this;
     }
-    GreetingComponent.prototype.scroll = function (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    };
     GreetingComponent.prototype.ngOnInit = function () {
         var _this = this;
         setInterval(this.updateGreeting, 2100);
         setInterval(function () {
-            _this.triangleBottomPosition = _this.triangleBottomPosition === 100 ? 110 : 100;
+            _this.triangleBottomPosition = _this.triangleBottomPosition === 15 ? 16 : 15;
         }, 1000);
         setTimeout(function () {
             _this.containerOpacity = 1;
@@ -213,6 +225,29 @@ var GreetingComponent = /** @class */ (function () {
         __metadata("design:paramtypes", [])
     ], GreetingComponent);
     return GreetingComponent;
+}(_utils_classes__WEBPACK_IMPORTED_MODULE_1__["SiteFeatures"]));
+
+
+
+/***/ }),
+
+/***/ "./src/app/utils/classes.ts":
+/*!**********************************!*\
+  !*** ./src/app/utils/classes.ts ***!
+  \**********************************/
+/*! exports provided: SiteFeatures */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SiteFeatures", function() { return SiteFeatures; });
+var SiteFeatures = /** @class */ (function () {
+    function SiteFeatures() {
+    }
+    SiteFeatures.prototype.scroll = function (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+    return SiteFeatures;
 }());
 
 

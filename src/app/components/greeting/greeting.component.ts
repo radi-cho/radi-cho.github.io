@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
+import { SiteFeatures } from '../../utils/classes';
 
 // Import greetings data
 import { greetings, fullName, shorFirstName } from '../../utils/constants';
 // greetings - array with multiple greetings
 import { getGreeting } from '../../utils/methods';
 // getGreeting - method which returns one of many greetings
-import { Greeting } from '../../utils/types';
+import { Greeting } from '../../utils/interfaces';
 // Greeting - interface which contains the data (title & index) types of a greeting
 
 @Component({
@@ -13,13 +14,16 @@ import { Greeting } from '../../utils/types';
   templateUrl: './greeting.component.html',
   styleUrls: ['./greeting.component.css']
 })
-export class GreetingComponent implements OnInit {
-  constructor() {}
+export class GreetingComponent extends SiteFeatures implements OnInit {
+  constructor() {
+    super();
+  }
+
   greeting: Greeting = getGreeting(0, shorFirstName);
   name: string = fullName;
   containerOpacity: number = 0;
   textOpacity: number = 1;
-  triangleBottomPosition: number = 100;
+  triangleBottomPosition: number = 15;
 
   updateGreeting = () => {
     this.textOpacity = 0;
@@ -31,14 +35,10 @@ export class GreetingComponent implements OnInit {
     }, 520);
   };
 
-  scroll(el: any): void {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }
-
   ngOnInit() {
     setInterval(this.updateGreeting, 2100);
     setInterval(() => {
-      this.triangleBottomPosition = this.triangleBottomPosition === 100 ? 110 : 100;
+      this.triangleBottomPosition = this.triangleBottomPosition === 15 ? 16 : 15;
     }, 1000);
     setTimeout(() => {
       this.containerOpacity = 1;

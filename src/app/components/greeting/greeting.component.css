@@ -1,8 +1,8 @@
 .greeting-container {
   position: relative;
-  height: 65vh;
-  padding-top: 35vh;
-  min-height: 430px;
+  height: 70vh;
+  padding-top: 30vh;
+  min-height: 250px;
   transition: all 1.5s ease-out;
   background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);
   background-size: 600% 600%;
@@ -27,7 +27,7 @@
 
 #title-text {
   transition: opacity 0.5s ease-out;
-  font-size: 9vw;
+  font-size: 9vmax;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -43,10 +43,10 @@
 
 .navigation-arrow-container > div {
   display: inline-block;
-  padding: 30px;
-  padding-top: 25px;
+  width: 6.2vmax;
+  height: 6.2vmax;
   background: rgba(255, 255, 255, 0.5);
-  border: 1px dashed grey;
+  border: 1px solid silver;
   border-radius: 120%;
   cursor: pointer;
 }
@@ -54,11 +54,14 @@
 .triangle-icon {
   display: inline-block;
   border: solid rgba(65, 130, 130, 0.8);
-  border-width: 0 7px 7px 0;
-  padding: 15px;
+  border-width: 0 0.6vmax 0.6vmax 0;
+  padding: 1.2vmax;
 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+
+  position: relative;
+  top: 1vmax;
 }
 
 @-webkit-keyframes BackgroundAnimation {
