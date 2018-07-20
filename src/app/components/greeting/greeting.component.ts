@@ -19,6 +19,7 @@ export class GreetingComponent implements OnInit {
   name: string = fullName;
   containerOpacity: number = 0;
   textOpacity: number = 1;
+  triangleBottomPosition: number = 100;
 
   updateGreeting = () => {
     this.textOpacity = 0;
@@ -30,8 +31,15 @@ export class GreetingComponent implements OnInit {
     }, 520);
   };
 
+  scroll(el: any): void {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
   ngOnInit() {
     setInterval(this.updateGreeting, 2100);
+    setInterval(() => {
+      this.triangleBottomPosition = this.triangleBottomPosition === 100 ? 110 : 100;
+    }, 1000);
     setTimeout(() => {
       this.containerOpacity = 1;
     }, 100);
