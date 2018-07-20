@@ -1,15 +1,7 @@
 .greeting-container {
-  position: relative;
   height: 70vh;
   padding-top: 30vh;
   min-height: 250px;
-  transition: all 1.5s ease-out;
-  background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);
-  background-size: 600% 600%;
-  -webkit-animation: BackgroundAnimation 120s ease infinite;
-  -moz-animation: BackgroundAnimation 120s ease infinite;
-  animation: BackgroundAnimation 120s ease infinite;
-  text-align: center;
 }
 
 .greeting-title {
@@ -18,17 +10,11 @@
   margin: 0 auto;
   width: 90vw;
   border-radius: 10vw;
-
-  position: relative;
-  user-select: none;
-  -wbekit-user-select: none;
-  -ms-user-select: none;
 }
 
 #title-text {
   transition: opacity 0.5s ease-out;
   font-size: 9vmax;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .navigation-arrow-container {

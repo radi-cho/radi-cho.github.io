@@ -1,0 +1,15 @@
+.info-container {
+  background: rgba(178, 0, 185, 0.2);
+  padding-top: 5vh;
+  height: 95vh;
+
+  position: relative;
+  user-select: none;
+  -wbekit-user-select: none;
+  -ms-user-select: none;
+}
+
+.header {
+  color: rgb(80, 15, 15);
+  font-size: 15vmin;
+}
