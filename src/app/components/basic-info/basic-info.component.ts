@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BasicInfoComponent implements OnInit {
   constructor() {}
-  title: Array<string> = ['Who am I?'];
 
   ngOnInit() {}
 }

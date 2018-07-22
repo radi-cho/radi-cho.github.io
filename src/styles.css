@@ -9,6 +9,10 @@ body {
   -webkit-animation: BackgroundAnimation 120s ease infinite;
   -moz-animation: BackgroundAnimation 120s ease infinite;
   animation: BackgroundAnimation 120s ease infinite;
+
+  user-select: none;
+  -wbekit-user-select: none;
+  -ms-user-select: none;
 }
 
 .site-container {
@@ -17,6 +21,7 @@ body {
   transition: all 1.5s ease-out;
   background-size: 600% 600%;
   text-align: center;
+  position: relative;
 }
 
 @-webkit-keyframes BackgroundAnimation {
