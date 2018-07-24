@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { SiteFeatures } from '../../utils/classes';
 
 // Import greetings data
-import { greetings, fullName, shorFirstName } from '../../utils/constants';
+import { greetings, shorFirstName } from '../../utils/constants';
 // greetings - array with multiple greetings
 import { getGreeting } from '../../utils/methods';
 // getGreeting - method which returns one of many greetings
@@ -20,7 +20,6 @@ export class GreetingComponent extends SiteFeatures implements OnInit {
   }
 
   greeting: Greeting = getGreeting(0, shorFirstName);
-  name: string = fullName;
   containerOpacity: number = 0;
   textOpacity: number = 1;
   triangleBottomPosition: number = 15;

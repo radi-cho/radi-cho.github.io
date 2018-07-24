@@ -29,8 +29,8 @@
 
 .navigation-arrow-container > div {
   display: inline-block;
-  width: 9vmin;
-  height: 9vmin;
+  width: 12vmin;
+  height: 12vmin;
   background: rgba(255, 255, 255, 0.5);
   border: 1px solid silver;
   border-radius: 120%;
@@ -40,14 +40,14 @@
 .triangle-icon {
   display: inline-block;
   border: solid rgba(65, 130, 130, 0.8);
-  border-width: 0 0.5vmin 0.5vmin 0;
-  padding: 2.2vmin;
+  border-width: 0 1vmin 1vmin 0;
+  padding: 2.7vmin;
 
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 
   position: relative;
-  top: 1vmin;
+  top: 1.5vmin;
 }
 
 @-webkit-keyframes BackgroundAnimation {

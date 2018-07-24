@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { fullName, livingPlace, birthDay } from '../../utils/constants';
+import { getAge } from '../../utils/methods';
 
 @Component({
   selector: 'basic-info',
@@ -6,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic-info.component.css']
 })
 export class BasicInfoComponent implements OnInit {
+  name: string = fullName;
+  place: string = livingPlace;
+  age: object = getAge(birthDay);
+
   constructor() {}
 
   ngOnInit() {}
