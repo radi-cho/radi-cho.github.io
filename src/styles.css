@@ -5,6 +5,8 @@ html {
   -webkit-animation: BackgroundAnimation 120s ease infinite;
   -moz-animation: BackgroundAnimation 120s ease infinite;
   animation: BackgroundAnimation 120s ease infinite;
+
+  font-size: 1.5vmin;
 }
 
 body {

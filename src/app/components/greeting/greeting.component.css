@@ -29,6 +29,12 @@
   font-size: 9vmax;
 }
 
+@media only screen and (max-width: 380px) {
+  #title-text {
+    font-size: 11vmin;
+  }
+}
+
 .navigation-arrow-container {
   position: absolute;
   width: 100%;
