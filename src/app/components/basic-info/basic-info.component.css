@@ -23,10 +23,37 @@
 
 .social {
   display: inline-block;
+  border-radius: 50%;
   text-align: center;
   width: 15vmin;
   height: 15vmin;
-  background: red;
   margin: 0 3vw;
-  border-radius: 50%;
+
+  filter: opacity(0.8);
+  background: #018786;
+  cursor: pointer;
+}
+
+.social:hover {
+  filter: opacity(1);
+}
+
+.twitter {
+  background: url('../../../assets/Twitter-icon.svg');
+  background-size: 100%;
+}
+
+.github {
+  background: url('../../../assets/GitHub-icon.svg');
+  background-size: 100%;
+}
+
+.linked {
+  background: url('../../../assets/LinkedIn-icon.svg');
+  background-size: 100%;
+}
+
+.youtube {
+  background: url('../../../assets/YouTube-icon.svg');
+  background-size: 100%;
 }
