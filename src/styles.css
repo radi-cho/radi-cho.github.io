@@ -1,14 +1,16 @@
+html {
+  background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);
+  background-size: 600% 600%;
+  /* background-attachment: fixed; */
+  -webkit-animation: BackgroundAnimation 120s ease infinite;
+  -moz-animation: BackgroundAnimation 120s ease infinite;
+  animation: BackgroundAnimation 120s ease infinite;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-  background: linear-gradient(50deg, #96fbc4, #f9f586, #57f2cc, #8fd3f4, #fed6e3, #fddb92, #84fab0);
-  background-size: 600% 600%;
-  background-attachment: fixed;
-  -webkit-animation: BackgroundAnimation 120s ease infinite;
-  -moz-animation: BackgroundAnimation 120s ease infinite;
-  animation: BackgroundAnimation 120s ease infinite;
 
   user-select: none;
   -wbekit-user-select: none;

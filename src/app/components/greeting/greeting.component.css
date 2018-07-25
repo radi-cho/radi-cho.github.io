@@ -1,7 +1,19 @@
 .greeting-container {
   height: 70vh;
   padding-top: 30vh;
-  min-height: 250px;
+  min-height: 150px;
+}
+
+@media only screen and (min-width: 610px) {
+  .greeting-container {
+    min-height: 170px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .greeting-container {
+    min-height: 210px;
+  }
 }
 
 .greeting-title {
