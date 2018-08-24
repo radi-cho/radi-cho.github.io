@@ -4,9 +4,22 @@
         I'm {{age.years}} years, and {{age.months}} months old and live in {{place}}.
     </div>
     <div class="socials-container">
-        <div class="social twitter"></div>
-        <div class="social github"></div>
-        <div class="social linked"></div>
-        <div class="social youtube"></div>
+        <div
+            class="social twitter"
+            (click)="socialLink('twitter')"
+        ></div>
+        <div
+            class="social github"
+            (click)="socialLink('github')"
+        ></div>
+        <div
+            class="social linked"
+            (click)="socialLink('linked')"
+        ></div>
+        <div
+            class="social youtube"
+            (click)="socialLink('youtube')"
+        >
+        </div>
     </div>
 </div>

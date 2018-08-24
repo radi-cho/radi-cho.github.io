@@ -3,3 +3,10 @@ export const fullName: string = 'Radostin Cholakov';
 export const shorFirstName: string = 'Radi';
 export const livingPlace: string = 'Barutin, Bulgaria';
 export const birthDay: Date = new Date(2005, 12, 8);
+
+export const socials = {
+  youtube: 'youtube',
+  twitter: 'twitter',
+  linked: 'linked',
+  github: 'github'
+};

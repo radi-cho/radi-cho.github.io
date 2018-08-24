@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { fullName, livingPlace, birthDay } from '../../utils/constants';
+import { fullName, livingPlace, birthDay, socials } from '../../utils/constants';
 import { getAge } from '../../utils/methods';
 
 @Component({
@@ -15,4 +15,7 @@ export class BasicInfoComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
+
+  socialLink(social) {
+  }
 }
