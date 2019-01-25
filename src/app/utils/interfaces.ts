@@ -5,5 +5,5 @@ export interface Greeting {
 
 export interface Age {
   years: number;
-  months: number;
+  seconds: number;
 }

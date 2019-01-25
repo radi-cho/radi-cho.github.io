@@ -9,13 +9,20 @@ import { getAge } from '../../utils/methods';
 })
 export class BasicInfoComponent implements OnInit {
   name: string = fullName;
-  place: string = livingPlace;
+  place: object = livingPlace;
   age: object = getAge(birthDay);
 
-  constructor() {}
+  constructor() {
+    setInterval(this.updateAge, 1000);
+  }
+
+  updateAge = () => {
+    this.age = getAge(birthDay);
+  }
 
   ngOnInit() {}
 
   socialLink(social) {
+    alert(socials[social]);
   }
 }
