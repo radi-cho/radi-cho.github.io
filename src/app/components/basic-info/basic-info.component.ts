@@ -18,11 +18,8 @@ export class BasicInfoComponent implements OnInit {
 
   updateAge = () => {
     this.age = getAge(birthDay);
-  }
+  };
 
+  socialLink = social => window.open(socials[social], '_blank');
   ngOnInit() {}
-
-  socialLink(social) {
-    alert(socials[social]);
-  }
 }
