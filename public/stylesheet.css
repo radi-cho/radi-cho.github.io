@@ -212,10 +212,18 @@ img[alt="project"][width="160"] {
     margin: 0 auto 12px;
   }
   
-  /* Adjust profile image for mobile */
-  .profile-image-container {
-    background-size: 140% !important;
-    background-position: 45% 35% !important;
+  /* Adjust profile image for mobile - keep same dimensions as desktop */
+  .header-row .profile-image-container {
+    width: 200px !important;
+    min-width: 200px !important;
+    max-width: 200px !important;
+    height: 200px !important;
+    min-height: 200px !important;
+    max-height: 200px !important;
+    aspect-ratio: 1 !important;
+    flex-shrink: 0 !important;
+    background-size: 125% !important;
+    background-position: 70% 75% !important;
   }
 
   /* Reorder: show image above the name/intro */
