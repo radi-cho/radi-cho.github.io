@@ -68,6 +68,33 @@ a {
   text-decoration: none;
 }
 
+/* Prevent horizontal scroll due to overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Make box sizing predictable and avoid overflow from padding/borders */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins and avoid accidental horizontal scroll */
+body {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Keep media and tables within viewport */
+img, table {
+  max-width: 100%;
+}
+
 a:focus,
 a:hover {
   color: #f09228;
@@ -156,6 +183,19 @@ img[alt="project"][width="160"] {
   background-color: #ffffff;
 }
 
+/* Profile image container styles */
+.profile-image-container {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url('images/profilepic.jpg');
+  background-size: 125%;
+  background-position: 70% 75%;
+  background-repeat: no-repeat;
+}
+
 /* Responsive layout tweaks */
 @media (max-width: 768px) {
   /* Stack bio text and profile image */
@@ -171,9 +211,11 @@ img[alt="project"][width="160"] {
   .header-row td[style*="width: 37%"] > div {
     margin: 0 auto 12px;
   }
-  .header-row td[style*="width: 37%"] img[alt="profile photo"] {
-    object-position: 50% 40%;
-    transform: scale(1.5);
+  
+  /* Adjust profile image for mobile */
+  .profile-image-container {
+    background-size: 140% !important;
+    background-position: 45% 35% !important;
   }
 
   /* Reorder: show image above the name/intro */
@@ -214,3 +256,4 @@ img[alt="project"][width="160"] {
     padding-top: 0;
   }
 }
+
