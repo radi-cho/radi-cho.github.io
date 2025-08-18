@@ -140,3 +140,77 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Subtle styling for blog dates */
+.blog-date {
+  color: #555;
+}
+
+/* Force paper/preprint/project thumbnails to square with white letterboxing */
+img[alt="paper"][width="160"],
+img[alt="preprint"][width="160"],
+img[alt="project"][width="160"] {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+/* Responsive layout tweaks */
+@media (max-width: 768px) {
+  /* Stack bio text and profile image */
+  .header-row td[style*="width: 63%"] {
+    display: block;
+    width: 100% !important;
+    padding-left: calc(2.5% + 32px) !important;
+  }
+  .header-row td[style*="width: 37%"] {
+    display: block;
+    text-align: center;
+  }
+  .header-row td[style*="width: 37%"] > div {
+    margin: 0 auto 12px;
+  }
+  .header-row td[style*="width: 37%"] img[alt="profile photo"] {
+    object-position: 50% 40%;
+    transform: scale(1.5);
+  }
+
+  /* Reorder: show image above the name/intro */
+  .header-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-row td[style*="width: 37%"] { 
+    order: -1; 
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  /* Stack thumbnail above text for papers, preprints, and projects */
+  td[style*="width: 20%"] {
+    display: block;
+    width: 100% !important;
+    text-align: center;
+    padding-bottom: 0 !important;
+  }
+  td[style*="width: 80%"] {
+    display: block;
+    width: 100% !important;
+    padding-top: 8px !important;
+  }
+  /* Center thumbnails; keep them from taking full width */
+  td[style*="width: 20%"] img[alt="paper"],
+  td[style*="width: 20%"] img[alt="preprint"],
+  td[style*="width: 20%"] img[alt="project"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Remove top padding from name on mobile */
+  .name {
+    padding-top: 0;
+  }
+}
